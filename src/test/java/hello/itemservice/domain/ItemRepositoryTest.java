@@ -58,6 +58,9 @@ class ItemRepositoryTest {
         assertThat(findItem.getQuantity()).isEqualTo(updateParam.getQuantity());
     }
 
+    //테스트에서 매우 중요한 원칙은 다음과 같다.
+    //테스트는 다른 테스트와 격리해야 한다.
+    //테스트는 반복해서 실행할 수 있어야 한다.
     @Test
     void findItems() {
         //given
